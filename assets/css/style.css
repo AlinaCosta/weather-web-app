@@ -11855,5 +11855,62 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.search-bar {
+  border: 2px solid rgba(255, 255, 255, 0.4235294118);
+  border-radius: 99px;
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  position: relative;
+  transition: width 300ms ease-in-out;
+}
+.search-bar__input {
+  padding: 0 1rem;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.search-bar__input::placeholder {
+  color: rgba(255, 255, 255, 0.768627451);
+}
+.search-bar__input:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+}
+.search-bar__submit {
+  border-radius: 50%;
+  margin-left: auto;
+  z-index: 1;
+  transition: background 150ms ease-in-out;
+}
+.search-bar__submit .bi-search {
+  color: rgba(255, 255, 255, 0.8823529412);
+}
+.search-bar:focus-within {
+  width: 100%;
+}
+.search-bar:focus-within .search-bar__input {
+  opacity: 1;
+  cursor: initial;
+}
+.search-bar:focus-within .search-bar__submit:hover {
+  background-color: #da7e77;
+}
+.search-bar:focus-within .search-bar__submit:hover .bi-search {
+  color: #fff;
+}
+
+.app-bg {
+  background-image: url();
+}
 
 /*# sourceMappingURL=style.css.map */
