@@ -1,0 +1,23 @@
+@use '../custom' as *;
+body {
+  padding-top: 3rem;
+  background-color: $secondary;
+  background: linear-gradient(
+      0deg,
+      rgba($secondary, 0.95) 0%,
+      rgba($primary, 0.9) 100%
+    ),
+    url(/images/bg-app.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+.bi-brightness-high-fill,
+.bi-sunrise-fill,
+.bi-sunset-fill {
+  color: $yellow;
+}
+.bi-cloud-moon-fill,
+.bi-cloud-rain-fill {
+  color: $gray-400;
+}

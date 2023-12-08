@@ -1,0 +1,30 @@
+@use '../custom' as *;
+
+.today-highlights {
+  &__cards > * {
+    background-color: transparent;
+    box-shadow: $box-shadow;
+    border: 1px solid rgba($white, 0.4);
+    color: $white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border: 1px solid rgba($white, 0.8);
+    }
+  }
+  .field-name {
+    color: $gray-300;
+  }
+  .bi-brightness-high-fill,
+  .bi-sunrise-fill,
+  .bi-sunset-fill {
+    text-shadow: 2px 2px 6px $gray-900;
+  }
+  .bi-wind,
+  .bi-moisture,
+  .bi-eye-fill,
+  .bi-speedometer {
+    font-size: 1.5rem;
+    color: $gray-500;
+  }
+}

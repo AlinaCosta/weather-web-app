@@ -1,12 +1,11 @@
-// my theme colos
-$purple: #6f42c1;
-$purple-dark: #9926f0;
-$purple-light: #bb6ef5;
+// my theme colors
+$primary: rgb(154, 41, 240);
+$secondary: rgb(13, 42, 74);
 
-$pink: #d122e3;
+$blue-light: rgba(12, 69, 103);
+$purple-light: rgb(176, 135, 212);
 
-$primary: $purple-dark;
-$secondary: $pink;
+$yellow: #ffc107;
 
 //gray-color-variables
 $white: #fff;
@@ -21,9 +20,13 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
-//navbar icon
-$navbar-light-icon-color: rgba($gray-900, 0.75);
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-7 -7 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/></svg>");
+//nav-tabs
+$body-bg: transparent;
+$border-color: rgba($white, 0.5);
+$body-emphasis-color: $gray-300;
+$link-color: $purple-light;
+$link-hover-color: rgba($link-color, 0.8);
+$nav-tabs-link-hover-border-color: rgba($white, 0.5);
 
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,11 +1,13 @@
 @use 'custom';
 
+//import the base
+@use 'base/base';
+
 //import the components
-@use 'components/animations';
-@use 'components/buttons';
 @use 'components/search-bar';
-@use 'components/mixins';
-@use 'components/typography';
 
 //inport the sections
-@use 'sections/navbar';
+@use 'sections/current-weather';
+@use 'sections/popular-cities';
+@use 'sections/today-highlights';
+@use 'sections/weather-forecast';
