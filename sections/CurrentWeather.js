@@ -1,8 +1,8 @@
 // Adăugarea funcției de afișare a detaliilor despre vreme la momentul curent.
 // Declararea functiei pentru afisarea vremii curente. Apelul se face in alte fisiere.
-function displayCurrentWeather() {
+function displayCurrentWeather(city) {
   // Generam link-ul serverului, pe baza orasului.
-  const currentWeatherEndpoint = getCurrentWeatherEndpoint('Bucharest');
+  const currentWeatherEndpoint = getCurrentWeatherEndpoint(city);
 
   fetch(currentWeatherEndpoint)
     .then((response) => response.json())
