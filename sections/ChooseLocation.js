@@ -7,6 +7,7 @@ const barcelona = document.querySelector('.barcelona');
 function updateWeather(city) {
   localStorage.setItem('city', city);
   displayCurrentWeather(city);
+  displayWeatherForecast(city);
 }
 
 bucharest.addEventListener('click', function () {

@@ -9,6 +9,7 @@ if (!currentCity) {
 }
 
 displayCurrentWeather(currentCity);
+displayWeatherForecast(currentCity);
 displayPopularCities('Bucharest');
 displayPopularCities('London');
 displayPopularCities('Paris');

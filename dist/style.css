@@ -11977,12 +11977,16 @@ textarea.form-control-lg {
   }
 }
 body {
-  padding-top: 3rem;
+  padding: 3rem 0 5rem 0;
   background-color: rgb(13, 42, 74);
-  background: linear-gradient(0deg, rgba(13, 42, 74, 0.95) 0%, rgba(154, 41, 240, 0.9) 100%), url(/images/bg-app.jpg);
+  background: linear-gradient(0deg, rgba(13, 42, 74, 0.95) 0%, rgba(13, 42, 74, 0.95) 50%, rgba(154, 41, 240, 0.9) 100%), url(/images/bg-app.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
+}
+
+h2 {
+  letter-spacing: 1px;
 }
 
 .bi-brightness-high-fill,
