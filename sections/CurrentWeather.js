@@ -1,7 +1,4 @@
-// Adăugarea funcției de afișare a detaliilor despre vreme la momentul curent.
-// Declararea functiei pentru afisarea vremii curente. Apelul se face in alte fisiere.
 function displayCurrentWeather(city) {
-  // Generam link-ul serverului, pe baza orasului.
   const currentWeatherEndpoint = getCurrentWeatherEndpoint(city);
 
   fetch(currentWeatherEndpoint)
@@ -16,16 +13,13 @@ function displayCurrentWeather(city) {
       const temperature = Math.round(main.temp);
       const realFeel = Math.round(main.feels_like);
       const weatherDescription = weather[0].description;
-      // const weatherIcon = getWeatherIcon(weather[0].icon);
+      const weatherIcon = getWeatherIcon(weather[0].icon);
       const windSpeed = windToKmPerHour(Math.round(wind.speed));
       const humidity = main.humidity;
       const pressure = main.pressure;
       const weatherVisibility = visibilityToKm(visibility);
       const sunrise = getHour(sys.sunrise);
       const sunset = getHour(sys.sunset);
-
-      // Selectam div cu clasa current-weather
-      // Folosing innerHtml si string interpolation injecteaza datele in acest div
 
       let currentWeather = document.querySelector('.current-weather');
       let todayHighlights = document.querySelector('.today-highlights');
@@ -35,7 +29,7 @@ function displayCurrentWeather(city) {
                 <p class="fs-5 mt-2">${day}, ${hours}</p>
                 <div class="d-flex align-items-baseline gap-2 mt-3">
                   <span class="my-1"
-                    ><i class="bi bi-brightness-high-fill display-1"></i
+                    ><i class="bi ${weatherIcon} display-1"></i
                   ></span>
                   <p class="display-1">${temperature}°C</p>
                 </div>
@@ -49,7 +43,7 @@ function displayCurrentWeather(city) {
               <div class="card flex-grow-1 w-25 text-center p-3">
                 <p class="field-name text-start">Real Feel</p>
                 <p class="fs-1">
-                  <i class="bi bi-brightness-high-fill"></i> ${realFeel}°C
+                  <i class="bi ${weatherIcon}"></i> ${realFeel}°C
                 </p>
                 <p>${weatherDescription}</p>
               </div>

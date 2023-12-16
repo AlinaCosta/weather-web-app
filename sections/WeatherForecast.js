@@ -21,7 +21,7 @@ function displayWeatherForecast(city) {
       });
 
       for (key in daysMap) {
-        weatherForecast.innerHTML += `<h2 class="fs-6 ms-1 text-uppercase text-white w-100">${key}</h2>`;
+        weatherForecast.innerHTML += `<h2 class="fs-6 ms-1 mt-4 text-uppercase text-white w-100">${key}</h2>`;
         let days = daysMap[key];
         days.forEach((element) => {
           const { dt, main, weather } = element;
@@ -29,9 +29,9 @@ function displayWeatherForecast(city) {
           const temperature = Math.round(main.temp);
           const weatherIcon = getWeatherIcon(weather[0].icon);
           weatherForecast.innerHTML += `
-              <div class=" d-flex flex-column flex-grow-1 justify-content-center align-items-center shadow p-3 mb-3">
+              <div class="weather-forecast__container card d-flex flex-column justify-content-center align-items-center">
               <p class="h6 hour">${hour}</p>
-              <span class="my-1"><i class="bi bi-brightness-high-fill"></i></span>
+              <span class="my-1"><i class="bi ${weatherIcon}"></i></span>
               <p class="grade">${temperature}°C</p>
             </div>
            `;

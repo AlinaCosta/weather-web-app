@@ -16,12 +16,26 @@ body {
 h2 {
   letter-spacing: 1px;
 }
+.bi {
+  text-shadow: 2px 2px 6px $gray-900;
+}
 .bi-brightness-high-fill,
 .bi-sunrise-fill,
 .bi-sunset-fill {
   color: $yellow;
 }
+
 .bi-cloud-moon-fill,
-.bi-cloud-rain-fill {
+.bi-cloud-rain-fill,
+.bi-cloud-sun-fill,
+.bi-cloudy-fill,
+.bi-clouds-fill,
+.bi-cloud-drizzle-fill,
+.bi-cloud-lightning-fill,
+.bi-cloud-fog2-fill {
   color: $gray-400;
+}
+.bi-moon-stars-fill,
+.bi-snow2 {
+  color: $gray-300;
 }
