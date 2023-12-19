@@ -13,14 +13,20 @@
     font-size: 2rem;
     text-shadow: 2px 2px 6px $black;
   }
+
   &__container {
-    padding: 1.4rem 2.32rem;
+    flex: 0 1 150px;
+    padding: 1rem 0;
     box-shadow: $box-shadow;
     border: 1px solid rgba($white, 0.1);
     transition: all 0.3s ease-in-out;
 
     &:hover {
       border: 1px solid rgba($white, 0.4);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 1 120px;
     }
   }
 }

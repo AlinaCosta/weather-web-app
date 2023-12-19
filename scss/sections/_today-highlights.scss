@@ -2,18 +2,29 @@
 
 .today-highlights {
   &__cards > * {
+    flex: 1 0 25%;
     background-color: transparent;
     box-shadow: $box-shadow;
     border: 1px solid rgba($white, 0.3);
     color: $white;
     transition: all 0.3s ease-in-out;
+    padding: 1rem;
 
     &:hover {
       border: 1px solid rgba($white, 0.8);
     }
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+      flex: 0 1 150px;
+      padding: 1rem 0.5rem;
+    }
   }
   .field-name {
     color: $gray-300;
+  }
+  .bi-sunrise-fill,
+  .bi-sunset-fill {
+    font-size: 1.7rem;
   }
 
   .bi-wind,

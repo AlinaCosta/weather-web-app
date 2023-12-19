@@ -28,5 +28,7 @@ $link-color: $purple-light;
 $link-hover-color: rgba($link-color, 0.8);
 $nav-tabs-link-hover-border-color: rgba($white, 0.5);
 
+$transition-base: all 0.2s ease-in-out;
+
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

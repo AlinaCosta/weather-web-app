@@ -12,6 +12,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
+
+  @include media-breakpoint-down(xl) {
+    padding: 1rem 0 5rem 0;
+  }
 }
 h2 {
   letter-spacing: 1px;

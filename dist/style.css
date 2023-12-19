@@ -11984,6 +11984,11 @@ body {
   background-size: cover;
   background-position: bottom right;
 }
+@media (max-width: 1199.98px) {
+  body {
+    padding: 1rem 0 5rem 0;
+  }
+}
 
 h2 {
   letter-spacing: 1px;
@@ -12065,12 +12070,35 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 991.98px) {
+  .card-img {
+    height: 470px;
+    background-position: center;
+  }
+}
 
-.card-body {
+.current-weather .card-body {
   text-shadow: 2px 2px 6px #212529;
+}
+@media (max-width: 991.98px) {
+  .current-weather .city-name {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .current-weather .city-name {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .current-weather .city-name {
+    font-size: 2.5rem;
+  }
 }
 
 .popular-cities > * {
+  flex: 1 1 100%;
+  padding: 1.5rem 0;
   background: linear-gradient(rgba(154, 41, 240, 0.2) 0%, rgba(154, 41, 240, 0.2) 100%);
   color: #fff;
   border: 0;
@@ -12082,6 +12110,16 @@ h2 {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   background: linear-gradient(rgba(154, 41, 240, 0.5) 0%, rgba(154, 41, 240, 0.5) 100%);
 }
+@media (max-width: 991.98px) {
+  .popular-cities > * {
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .popular-cities > * {
+    flex: 0 1 120px;
+  }
+}
 .popular-cities .city {
   color: #e9ecef;
   margin-top: 0.5rem;
@@ -12091,17 +12129,30 @@ h2 {
 }
 
 .today-highlights__cards > * {
+  flex: 1 0 25%;
   background-color: transparent;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   transition: all 0.3s ease-in-out;
+  padding: 1rem;
 }
 .today-highlights__cards > *:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
+@media (max-width: 575.98px) {
+  .today-highlights__cards > * {
+    flex-wrap: wrap;
+    flex: 0 1 150px;
+    padding: 1rem 0.5rem;
+  }
+}
 .today-highlights .field-name {
   color: #dee2e6;
+}
+.today-highlights .bi-sunrise-fill,
+.today-highlights .bi-sunset-fill {
+  font-size: 1.7rem;
 }
 .today-highlights .bi-wind,
 .today-highlights .bi-moisture,
@@ -12125,11 +12176,17 @@ h2 {
   text-shadow: 2px 2px 6px #000;
 }
 .weather-forecast__container {
-  padding: 1.4rem 2.32rem;
+  flex: 0 1 150px;
+  padding: 1rem 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease-in-out;
 }
 .weather-forecast__container:hover {
   border: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 575.98px) {
+  .weather-forecast__container {
+    flex: 0 1 120px;
+  }
 }/*# sourceMappingURL=style.css.map */
