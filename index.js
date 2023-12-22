@@ -1,6 +1,3 @@
-// este primul fișier care execută instrucțiuni ce duc la afișarea de informații pe ecran
-// este responsabil de afișarea pe ecran a datelor ce țin de JavaScript
-
 let currentCity = localStorage.getItem('city');
 
 if (!currentCity) {
@@ -13,5 +10,5 @@ displayWeatherForecast(currentCity);
 displayPopularCities('Bucharest');
 displayPopularCities('London');
 displayPopularCities('Paris');
-displayPopularCities('Rome');
+displayPopularCities('Galati');
 displayPopularCities('Barcelona');

@@ -1,7 +1,7 @@
 const bucharest = document.querySelector('.bucharest');
 const london = document.querySelector('.london');
 const paris = document.querySelector('.paris');
-const rome = document.querySelector('.rome');
+const galati = document.querySelector('.galati');
 const barcelona = document.querySelector('.barcelona');
 
 function updateWeather(city) {
@@ -19,8 +19,8 @@ london.addEventListener('click', function () {
 paris.addEventListener('click', function () {
   updateWeather('Paris');
 });
-rome.addEventListener('click', function () {
-  updateWeather('Rome');
+galati.addEventListener('click', function () {
+  updateWeather('Galati');
 });
 barcelona.addEventListener('click', function () {
   updateWeather('Barcelona');

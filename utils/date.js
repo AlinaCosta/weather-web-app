@@ -1,8 +1,4 @@
-// Conține funcții ajutătoare, ce sunt utilizate în multiple locuri din aplicație
-// conține funcții ce prelucrează date calendaristice
-
 function getDayOfTheWeek(utc) {
-  // Pentru a crea o data, pornind la o valoare unix utc, este nevoie sa o inmultim cu 1000 mai intai.
   const date = new Date(utc * 1000);
 
   const dayIndex = date.getDay();
